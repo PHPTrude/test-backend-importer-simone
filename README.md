@@ -1,18 +1,18 @@
 ## Description
 
-We've a set of data files for our (fictional) e-commerce car shop.
+We have a set of raw data files for our (fictional) e-commerce car shop.
 
-We need to populate our database with the contents from those data files.
-We also want to keep track of the result of the importing.
+We need to populate our database with the contents of those data files.
+We also want to keep track of the result of the import.
 
 ## Process
 
-- We provided you some example data files (one for each format we want to cover) into `./data` folder;
-- Data files can be of any of this types: `xml`, `csv` and `json`. But, in future, new types could be added;
+- We have provided some example data files (one for each format we want to cover) in the `./data` folder;
+- Data files can be any of these file types: `xml`, `csv` or `json`. In future, new types could be added;
 - Data files can be really big. Keep an eye on performance;
-- Importer is started visiting the URL like `http://localhost?source={data_format}`, where `data_format` can be `xml`, `csv` or `json`;
-- Imported product data should be saved into an SQL table named `products`;
-- Importer processes should be recorded into an SQL table named `import_logs`;
+- Importer should be started by visiting a URL like `http://localhost?source={data_format}`, where `data_format` can be `xml`, `csv` or `json`;
+- Imported product data should be saved to an SQL table named `products`;
+- Importer processes should be recorded to an SQL table named `import_logs`;
 
 ## Desired SQL structure
 
